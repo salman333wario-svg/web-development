@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My School's Webpage</title>
+</head>
+<body style="font-family: Arial; background-color: #f2f2f2; text-align: center;">
+
+    <h1 style="color: darkblue;">Sunrise High School</h1>
+
+    <h3><u>Address:</u></h3>
+    <p>123 Learning Street, Nairobi, Kenya</p>
+
+    <h3><u>Total Students Enrolled:</u></h3>
+    <p><b>1,200 students</b></p>
+
+    <h3><u>Streams Offered:</u></h3>
+    <p><i>Science, Arts, and Commerce</i></p>
+
+    <h3><u>Educational Board:</u></h3>
+    <p><b>Kenya National Examination Council (KNEC)</b></p>
+
+    <hr>
+
+    <p style="font-size: 18px;">We aim to provide quality education and shape future leaders!</p>
+
+</body>
+</html>

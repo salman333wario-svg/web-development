@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typography</title>
+
+    <style>
+        .text1 {
+            color: rgba(255, 0, 0, 0.384);
+            font-size: 40px;
+        }
+
+        .p1 {
+            color: rgb(52, 43, 226);
+            font-family: "Courier New";
+        }
+        .di {
+            text-transform: uppercase;
+        }
+    </style>
+
+<body>
+
+    <h1>Typography</h1>
+
+    <p class="text1">salman Welcome to codingal</p>
+
+    <p class="p1">salman Welcome to codingal</p>
+    <p class="di">salman Welcome to codingal</p>
+
+</body>
+</html>

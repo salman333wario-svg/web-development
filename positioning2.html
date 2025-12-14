@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Position Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    /* NAV */
+    nav {
+      background: black;
+      color: white;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    /* RELATIVE CONTAINER */
+    .box {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background: lightgray;
+      margin: 40px;
+    }
+
+    /* ABSOLUTE BOX */
+    .inside {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 100px;
+      height: 60px;
+      background: red;
+      color: white;
+      text-align: center;
+      line-height: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="box">
+    Relative Box
+    <div class="inside">
+      Absolute
+    </div>
+  </div>
+
+</body>
+</html>

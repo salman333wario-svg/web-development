@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Methods and Loops</title>
+</head>
+<body>
+
+<h2>Methods and Loops</h2>
+
+<p id="randomNumbers"></p>
+<p id="currentDate"></p>
+<p id="roundedNumber"></p>
+
+<script>
+  let numbers = "";
+
+  for (let i = 1; i <= 5; i++) {
+    numbers += Math.floor(Math.random() * 100) + " ";
+  }
+
+  document.getElementById("randomNumbers").innerHTML =
+    "Random Numbers: " + numbers;
+
+  let date = new Date();
+  document.getElementById("currentDate").innerHTML =
+    "Current Date: " + date.toDateString();
+
+  let randomDecimal = Math.random() * 10;
+  let rounded = Math.round(randomDecimal);
+
+  document.getElementById("roundedNumber").innerHTML =
+    "Rounded Random Number: " + rounded;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="demo"></p>
+
+    <script> 
+
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      document.write(fruits , "<br>");
+       
+      document.write(fruits.join("<br>"));
+      fruits.pop();
+        document.write("<br>" + fruits);
+     
+         function add(a, b) {
+           return a + b;
+         }  
+           
+         function average(a, b) {
+           return (a + b) / 2;
+         }
+          
+         let result = average(4, 6);
+         document.getElementById("demo").innerHTML = result;
+
+    </script>
+</body>
+</html>

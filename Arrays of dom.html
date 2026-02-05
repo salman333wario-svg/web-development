@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Object and Array DOM</title>
+</head>
+<body>
+
+  <h2 id="name"></h2>
+  <p id="age"></p>
+  <p id="course"></p>
+  <p id="score"></p>
+
+  <script>
+    const student = {
+      name: "Salman",
+      age: 21,
+      courses: ["HTML", "CSS", "JavaScript"],
+      scores: [85, 90, 88]
+    };
+
+    document.getElementById("name").innerHTML = student.name;
+    document.getElementById("age").innerHTML = student.age;
+    document.getElementById("course").innerHTML = student.courses[2];
+    document.getElementById("score").innerHTML = student.scores[1];
+  </script>
+
+</body>
+</html>

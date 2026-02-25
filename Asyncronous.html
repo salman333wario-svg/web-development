@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Asynchronous Functions in JS</title>
+</head>
+<body>
+
+  <h2>Fetch User Data</h2>
+  <button onclick="getUser()">Get User</button>
+
+  <p id="result"></p>
+
+  <script>
+    function fetchData() {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          const data = {
+            name: "Salman",
+            age: 20
+          };
+          resolve(data);
+        }, 2000);
+      });
+    }
+
+    async function getUser() {
+      const result = document.getElementById("result");
+      result.innerHTML = "Loading...";
+
+      try {
+        const user = await fetchData();
+        result.innerHTML = "Name: " + user.name + "<br>Age: " + user.age;
+      } catch (error) {
+        result.innerHTML = "Error fetching data";
+      }
+    }
+  </script>
+
+</body>
+</html>

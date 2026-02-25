@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Random Numbers</title>
+</head>
+<body>
+
+    <h2>Print Random Numbers</h2>
+    <div id="output"></div>
+
+    <script>
+        // Number of random numbers to print
+        let count = 0;
+        let totalNumbers = 10;   // You can change how many numbers you want
+
+        let result = "";
+
+        // While loop to print random numbers
+        while (count < totalNumbers) {
+            
+            // Generate random number between 1 and 100
+            let randomNumber = Math.floor(Math.random() * 100) + 1;
+
+            result += randomNumber + "<br>";
+            
+            count++;
+        }
+
+        // Display result on webpage
+        document.getElementById("output").innerHTML = result;
+
+    </script>
+
+</body>
+</html>

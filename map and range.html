@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Map and Arrange an Array</title>
+</head>
+
+<body>
+  <h1>Map and Arrange an Array</h1>
+
+  <p>Click the button to create, map, and sort the array.</p>
+
+  <button onclick="processArray()">Run Project</button>
+
+  <h3>Original Array:</h3>
+  <p id="original"></p>
+
+  <h3>Mapped Array (multiplied by 2):</h3>
+  <p id="mapped"></p>
+
+  <h3>Ascending Order:</h3>
+  <p id="ascending"></p>
+
+  <h3>Descending Order:</h3>
+  <p id="descending"></p>
+
+  <script>
+    function processArray() {
+      // 1. Create an array
+      let numbers = [5, 12, 3, 8, 20, 1];
+
+      // 2. Map array (multiply each number by 2)
+      let mappedArray = numbers.map(function(num) {
+        return num * 2;
+      });
+
+      // 3. Sort ascending
+      let ascending = [...mappedArray].sort(function(a, b) {
+        return a - b;
+      });
+
+      // 4. Sort descending
+      let descending = [...mappedArray].sort(function(a, b) {
+        return b - a;
+      });
+
+      // Display results on the page
+      document.getElementById("original").innerHTML = numbers.join(", ");
+      document.getElementById("mapped").innerHTML = mappedArray.join(", ");
+      document.getElementById("ascending").innerHTML = ascending.join(", ");
+      document.getElementById("descending").innerHTML = descending.join(", ");
+    }
+  </script>
+
+</body>
+</html>

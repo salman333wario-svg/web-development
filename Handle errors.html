@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Handle Errors in JavaScript</title>
+</head>
+
+<body>
+  <h1>Handle Errors in JS</h1>
+  <p>Click the button to see error handling in action:</p>
+
+  <button onclick="checkNumber()">Run Code</button>
+
+  <p id="output"></p>
+
+  <script>
+    function checkNumber() {
+      let output = document.getElementById("output");
+
+      try {
+        // Create an error on purpose
+        let number = -10;
+
+        if (number < 0) {
+          throw new Error("Number cannot be negative!");
+        }
+
+        output.innerHTML = "The number is: " + number;
+
+      } catch (error) {
+        // Display the error message
+        output.innerHTML = "Error: " + error.message;
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class in JS</title>
+</head>
+<body>
+
+    <h2>Classes in JavaScript</h2>
+    <div id="output"></div>
+
+    <script>
+        // Parent Class
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            // Instance Method
+            displayInfo() {
+                return "Name: " + this.name + "<br>Age: " + this.age;
+            }
+
+            // Static Method
+            static greet() {
+                return "Welcome to JavaScript Classes Project!";
+            }
+        }
+
+        // Child Class (Inheritance)
+        class Student extends Person {
+            constructor(name, age, course) {
+                super(name, age); // Call parent constructor
+                this.course = course;
+            }
+
+            // Child Method
+            displayStudentInfo() {
+                return this.displayInfo() + "<br>Course: " + this.course;
+            }
+        }
+
+        // Access Static Method
+        let message = Person.greet();
+
+        // Create Object of Child Class
+        let student1 = new Student("Abdirizak", 20, "Web Development");
+
+        // Display Output
+        document.getElementById("output").innerHTML =
+            message + "<br><br>" + student1.displayStudentInfo();
+
+    </script>
+
+</body>
+</html>
